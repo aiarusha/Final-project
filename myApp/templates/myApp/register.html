@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+     <link rel="stylesheet" href="{% static 'css/register.css' %}">
+     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Simonetta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="regform"><h1>Register Form</h1></div>
+    <div class="main">
+    <form method="POST">
+        {% csrf_token %}
+        <h2 class="username">Username  {{ form.username }}</h2>
+        <h2 class="username">E-mail  {{ form.email }}</h2>
+        <h2 class="username">Password  {{ form.password1 }}</h2>
+        <h2 class="username">Repeat password {{ form.password2 }}</h2>
+        <div class="form-group">
+            <button class="btn btn-outline-info" type="submit">Register</button>
+        </div>
+        {{ form.errors }}
+        <span>
+           <h2>Already have an account?</h2>
+            <a href="{% url 'login' %}" class="sign_link">Sign in!</a>
+        </span>
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Simonetta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+{#<div class="regform"><h1>Login Form</h1></div>#}
+{#    <div class="main">#}
+{#    <form method="POST">#}
+{#        {% csrf_token %}#}
+{#        <h2 class="username">Username <input type="text" name="username" required id="id_username"></h2>#}
+{#        <h2 class="username">Password<input type="password" name="password" required id="id_username"></h2>#}
+{#       <div class="mb-3 col-md-12">#}
+{#           <button class="btn btn-light float-right">Sign up</button>#}
+{#       </div>#}
+{#        {% for message in messages %}#}
+{#            <p class="alert-success">{{ message }}</p>#}
+{#        {% endfor %}#}
+{#        <span>#}
+{#            <h2> Don't have an account</h2>#}
+{#            <a href="{% url 'register' %}" class="sign_link">Sign up!</a>#}
+{#        </span>#}
+{#    </form>#}
+{#    </div>#}
+
+<div class="container">
+     <div class="row">
+         <div class="col-md-6 offset-md-3">
+             <div class="signup-form">
+                 <form action="" method="post" class="mt-5 border p-4 bg-gradient-secondary text-white shadow">
+                     {% csrf_token %}
+                   <h3 class="mb-5">Sign in</h3>
+                     <div class="row">
+                         <div class="mb-3 col-md-6">
+                             <label>Username<span class="text-danger">*</span></label>
+                             <input type="text" name="username" class="form-control">
+                         </div>
+
+                         <div class="mb-3 col-md-12">
+                             <label>Password <span class="text-danger">*</span></label>
+                             <input type="text" name="password" class="form-control">
+                         </div>
+
+                         <div class="mb-3 col-md-12">
+                           <button type="submit" class="btn btn-light float-right">Sign in</button>
+                         </div>
+                     </div>
+                     {% for message in messages %}
+                         <p class="alert-success">{{ message }}</p>
+                     {% endfor %}
+                 </form>
+                 <p class="text-center mt-3 text-secondary">Don't have an account, Please <a href="{% url 'register' %}" class="link_form">Sign up</a></p>
+             </div>
+         </div>
+     </div>
+     </div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</body>
+</html>

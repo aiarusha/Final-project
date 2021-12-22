@@ -1,0 +1,487 @@
+body{
+	background-color: white;
+    font-family: 'Balsamiq Sans';
+    width: 100%;
+    margin: 0;
+    transition: all 0.5s ease-in-out;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+/*Container*/
+.container{
+	width: 100%;
+    max-width: 960px;
+	margin: 10px auto;
+
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: black;
+}
+.header__inner{
+    display: flex;
+    padding-top: 35px;
+    padding-bottom: 37px;
+	justify-content: space-between;
+	align-items: center;
+    width: 100%;
+    margin: auto;
+    max-width: 100%;
+}
+.header__logo{
+    width: 35%;
+    height: 100%;
+    object-fit: contain;
+    display: flex;
+}
+.header__search{
+    width: 35%;
+    max-height: 100%;
+    display: flex;
+}
+.header_link{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.header_link a{
+    font-size: 120%;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 20%;
+    color: white;
+    display: flex;
+    width: 100%;
+
+}
+
+.header_link_image{
+    width: 100%;
+}
+.header_link a:hover{
+    color: dimgrey;
+}
+.search{
+    max-width: 100%;
+    width: 300px;
+    height: 35px;
+    font-size: 14px;
+    font-family:'Balsamiq Sans';
+    border-radius: 5px;
+    background-color: silver;
+}
+
+.navbar{
+    height: 60px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    padding-top: 18px;
+    margin-left: 10px;
+}
+.nav_link{
+    margin-top: 19px;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:black;
+}
+.nav_link:hover{
+    color: dimgrey;
+}
+
+/*Footer*/
+.footer{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+.for_pages{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+.footer_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+.social{
+    text-align: center;
+    padding-top: 5%;
+    background-color: black;
+}
+.firstcol{
+    width: 480px;
+    margin-bottom: 4%;
+}
+.pages a{
+    display:block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+}
+.pages a:hover{
+    color: dimgrey;
+}
+.theme{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+}
+.for_logo{
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding-left: 35%;
+    margin-top: 3%;
+    margin-bottom: 4%;
+}
+.for_end{
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 35%;
+    padding-right: 35%;
+    margin-top:4%;
+}
+.copyr{
+    font-family: 'Mulish', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 2%;
+}
+.social img{
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+.social img:hover{
+    background: dimgrey;
+    border-radius: 50%;
+}
+
+/*women*/
+
+.products{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.products_inner{
+    padding-bottom: 60px;
+}
+.products_inner img{
+    width: 250px;
+    padding: 10px;
+}
+.products_inner a{
+    text-decoration: none;
+}
+
+.title{
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 55px;
+    font-family: 'Mulish', sans-serif;
+    text-decoration: overline;
+}
+
+.brand{
+    color: darkslategray;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.brand:hover{
+    color: dimgrey;
+}
+.name_perfume{
+    font-size: 17px;
+    text-align: center;
+    width: 250px;
+    color: black;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    padding: 10px;
+}
+.price{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-family: 'Mulish', sans-serif;
+    text-decoration: underline;
+    padding-top: 10px;
+}
+.btn{
+    margin-left: 23px;
+    margin-top: 15px;
+}
+
+/*home*/
+
+.main_img img{
+    display: flex;
+    max-width:100%;
+    height: 100%;
+    margin-top: 75px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+}
+.phrase{
+    width:75%;
+    align-items: center;
+    margin-top: 55px;
+    margin-left: 12%;
+    margin-bottom: 110px;
+
+}
+.text{
+    font-size: 150%;
+    align-items: center;
+    text-align: center;
+}
+.columns{
+    display: flex;
+}
+.photo {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #c0c0c0;
+    overflow: hidden;
+
+}
+
+.imgs:hover img{
+    transform: scale(1.3);
+}
+
+.imgs img{
+     margin-bottom: 5%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+
+.cursor {
+    cursor: pointer;
+}
+
+.pre_footer {
+    width: 100%;
+    min-height: 400px;
+    margin: auto;
+}
+
+.pre_footer_inner {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pre_footer_inner img {
+    width: 200px;
+}
+/*about us*/
+
+
+.columns_about{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    margin-left: 4%;
+}
+.photo_about {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #c0c0c0;
+    overflow: hidden;
+
+}
+
+.imgs_about:hover img{
+    transform: scale(1.3);
+}
+
+.imgs_about img{
+     margin-bottom: 5%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.phrase_about{
+    width:75%;
+    align-items: center;
+    margin-top: 3%;
+    margin-left: 12%;
+    margin-bottom: 5%;
+    border-top: 3px solid ;
+    border-bottom: 3px solid ;
+}
+.head_about{
+    font-size: 170%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+.text_about{
+    font-size: 120%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.portfolio{
+    margin-left: 25px;
+    margin-bottom: 10%;
+}
+.portfolio ul,
+.portfolio li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-between;
+    margin-left: 17px;
+
+}
+.portfolio li{
+    display: inline-block;
+    width: 400px;
+    position: relative;
+    align-content: center;
+
+}
+.portfolio img{
+    max-width: 100%;
+    display: block;
+    align-content: center;
+}
+.descr{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    padding-top: 285px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 25px;
+    opacity: 0;
+    -webkit-transition: all .25s;
+    -o-transition:all .25s;
+    transition: all .25s;
+}
+.portfolio li:hover .descr{
+    opacity: 1;
+}
+/*contact*/
+.information{
+    display: block;
+}
+.s-0 {
+    border-radius: .25rem!important;
+    margin-top: 7%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 20%;
+}
+.head{
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 35px;
+    font-family: 'Mulish', sans-serif;
+    text-decoration: overline;
+}
+.three_col{
+    display:flex;
+    width: 100%;
+    font-size: 10px;
+    justify-content: space-between;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 8%;
+}
+.first,
+.second,
+.third{
+    padding: 25px;
+    border: 4px ridge;
+}
+
+.first h1,
+.second h1,
+.third h1{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+.first h2,
+.second h2,
+.third h2{
+    font-size: 23px;
+    font-weight: bolder;
+    color: black;
+}
+.p-0{
+    margin-bottom: 75px;
+    margin-top: 75px;
+}
+
+/*about us*/
+.card{
+    box-shadow: -1px 15px 30px -10px black;
+}
+.card-title{
+    text-align: center;
+}
+.card-text{
+    text-align: center;
+}
+
+/*Main.css*/
+.cartt{
+	margin-top: 75px;
+    margin-bottom: 35px;
+}
+.for_card{
+    display: flex;
+}
